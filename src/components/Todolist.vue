@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from 'vue'
-import IconTodo from "@/components/icons/IconTodo.vue";
+import IconTodo from "./icons/IconTodo.vue";
 
 const header = ref('My ToDo-list')
 const items = ref([
-  { id: 1, label: "Frukost", isDone: false },
+  { id: 1, label: "Äta Frukost", isDone: false },
   { id: 2, label: "Träna", isDone: false },
   { id: 3, label: "Programmera", isDone: false }
 ])
@@ -19,7 +19,7 @@ const save = () => {
   const item = {
     id: items.value.length + 1,
     label: newTodo.value,
-    isGreen: false
+    isDone: false
   }
   items.value.push(item)
   newTodo.value = ""
