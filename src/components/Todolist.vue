@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import IconTodo from "./icons/IconTodo.vue";
+import vFocus from '../directives/v-focus.js';
 
 const header = ref('My ToDo-list')
 const items = ref([
@@ -52,7 +53,7 @@ const done = (item) => {
     <main>
       <div class="main-area">
         <div class="input-area">
-          <input v-model="newTodo" placeholder="Add task" />
+          <input v-model="newTodo" v-focus placeholder="Add task" />
           <button @click="save">Save</button>
           <button @click="removeAll">Remove All</button>
         </div>
