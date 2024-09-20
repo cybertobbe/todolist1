@@ -87,22 +87,7 @@ const done = (item) => {
   text-decoration: line-through;
 }
 
-.todo-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 
-.todo-item span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  flex-grow: 1;
-  margin-right: 10px;
-}
 
 
 </style>
