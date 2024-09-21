@@ -1,6 +1,6 @@
 
 export default {
-    mounted(inputElement) {
-        inputElement.focus();
+    mounted(inputArea) {
+        inputArea.focus();
     }
 };
