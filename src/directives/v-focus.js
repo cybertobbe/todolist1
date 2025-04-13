@@ -1,6 +1,6 @@
 
 export default {
-    mounted(el) {
-        el.focus();
+    mounted(inputArea) {
+        inputArea.focus();
     }
 };
